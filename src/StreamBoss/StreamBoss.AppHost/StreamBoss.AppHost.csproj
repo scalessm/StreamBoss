@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StreamBoss.ApiService\StreamBoss.ApiService.csproj" />
+    <ProjectReference Include="..\StreamBoss.MovieApiService\StreamBoss.MovieApiService.csproj" />
     <ProjectReference Include="..\StreamBoss.Web\StreamBoss.Web.csproj" />
   </ItemGroup>
 

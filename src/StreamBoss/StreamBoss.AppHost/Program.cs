@@ -8,4 +8,6 @@ builder.AddProject<Projects.StreamBoss_Web>("webfrontend")
     .WithReference(cache)
     .WithReference(apiservice);
 
+builder.AddProject<Projects.StreamBoss_MovieApiService>("streamboss.movieapiservice");
+
 builder.Build().Run();
