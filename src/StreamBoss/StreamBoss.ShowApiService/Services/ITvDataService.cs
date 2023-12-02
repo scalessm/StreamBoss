@@ -1,6 +1,6 @@
-﻿using StreamBoss.MovieApiService.Models.TvMaze;
+﻿using StreamBoss.ShowApiService.Models.TvMaze;
 
-namespace StreamBoss.MovieApiService.Services
+namespace StreamBoss.ShowApiService.Services
 {
     public interface ITvDataService
     {

@@ -1,0 +1,6 @@
+@StreamBoss.ShowApiService_HostAddress = http://localhost:5139
+
+GET {{StreamBoss.ShowApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

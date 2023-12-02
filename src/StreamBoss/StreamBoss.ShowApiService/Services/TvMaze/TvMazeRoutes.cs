@@ -1,4 +1,4 @@
-﻿namespace StreamBoss.MovieApiService.Services.TvMaze
+﻿namespace StreamBoss.ShowApiService.Services.TvMaze
 {
     public static class TvMazeRoutes
     {

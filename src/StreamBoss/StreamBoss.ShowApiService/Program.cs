@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http.HttpResults;
-using StreamBoss.MovieApiService.Services;
-using StreamBoss.MovieApiService.Services.TvMaze;
+using StreamBoss.ShowApiService.Services;
+using StreamBoss.ShowApiService.Services.TvMaze;
 
 var builder = WebApplication.CreateBuilder(args);
 

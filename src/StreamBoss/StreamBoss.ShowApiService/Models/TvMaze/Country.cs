@@ -1,4 +1,4 @@
-﻿namespace StreamBoss.MovieApiService.Models.TvMaze
+﻿namespace StreamBoss.ShowApiService.Models.TvMaze
 {
     public class Country
     {
