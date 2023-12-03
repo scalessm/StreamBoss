@@ -1,4 +1,4 @@
-﻿using StreamBoss.ShowApiService.Models.TvMaze;
+﻿using StreamBoss.Shared.Models.TvMaze;
 using StreamBoss.Shared.Models;
 using System.Text.Json;
 using System.Text.Json.Serialization;

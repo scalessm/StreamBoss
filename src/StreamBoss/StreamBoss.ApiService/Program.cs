@@ -8,7 +8,7 @@ builder.AddServiceDefaults();
 // Add services to the container.
 builder.Services.AddProblemDetails();
 builder.Services.AddHttpClient();
-//builder.Services.AddHttpClient<IShowDataService, ShowDataService>(client => client.BaseAddress = new("http://streamboss.ShowApiService"));
+builder.Services.AddHttpClient<IShowDataService, ShowDataService>("ShowApi" ,client => client.BaseAddress = new("http://streamboss.ShowApiService"));
 builder.Services.AddScoped<IShowDataService, ShowDataService>();
 
 builder.Services.AddEndpointsApiExplorer();

@@ -1,4 +1,4 @@
-﻿namespace StreamBoss.ShowApiService.Models.TvMaze
+﻿namespace StreamBoss.Shared.Models.TvMaze
 {
     public class Network
     {

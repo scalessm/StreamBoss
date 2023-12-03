@@ -1,4 +1,4 @@
-﻿using StreamBoss.ShowApiService.Models.TvMaze;
+﻿using StreamBoss.Shared.Models.TvMaze;
 
 namespace StreamBoss.ShowApiService.Services
 {

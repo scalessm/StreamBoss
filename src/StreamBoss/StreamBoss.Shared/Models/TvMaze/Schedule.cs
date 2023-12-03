@@ -1,4 +1,4 @@
-﻿namespace StreamBoss.ShowApiService.Models.TvMaze
+﻿namespace StreamBoss.Shared.Models.TvMaze
 {
     using System.Collections.Generic;
 
