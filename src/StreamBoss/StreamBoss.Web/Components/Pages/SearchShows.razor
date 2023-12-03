@@ -1,0 +1,38 @@
+﻿@page "/searchshows"
+@using StreamBoss.Shared.Models
+@using StreamBoss.Web.Services
+
+
+<h3>SearchShows</h3>
+
+<div>
+    <input type="text" @bind="_searchTerm" />
+    <button class="btn btn-primary" @onclick="Search">Search</button>
+</div>
+
+<div>
+    @if (_shows != null)
+    {
+        @foreach(var show in _shows)
+        {
+            <div>
+                <h4>@show.Title</h4>
+                <p>@show.Summary</p>
+                <img src="@show.ImageUrl" />
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private string _searchTerm;
+    private Show[] _shows;
+
+    [Inject]
+    public IApiClient ApiClient { get; set; }
+
+    public async Task Search()
+    {
+        _shows = await ApiClient.SearchShows(_searchTerm);
+    }
+}

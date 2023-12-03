@@ -1,8 +1,8 @@
 ﻿using StreamBoss.Shared.Models;
 
-namespace StreamBoss.ApiService.Services
+namespace StreamBoss.Web.Services
 {
-    public interface IShowDataService
+    public interface IApiClient
     {
         Task<Show[]> SearchShows(string searchText);
     }

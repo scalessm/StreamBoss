@@ -1,4 +1,4 @@
-﻿namespace StreamBoss.ApiService.Models
+﻿namespace StreamBoss.Shared.Models
 {
     public class Show
     {

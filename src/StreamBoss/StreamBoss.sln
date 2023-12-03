@@ -12,7 +12,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamBoss.Web", "StreamBos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamBoss.ShowApiService", "StreamBoss.ShowApiService\StreamBoss.ShowApiService.csproj", "{980E554D-440D-490A-A490-81189FA64154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamBoss.Shared", "StreamBoss.Shared\StreamBoss.Shared.csproj", "{AEF879E9-206B-4B6B-A956-0E7E0F194139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamBoss.Shared", "StreamBoss.Shared\StreamBoss.Shared.csproj", "{AEF879E9-206B-4B6B-A956-0E7E0F194139}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

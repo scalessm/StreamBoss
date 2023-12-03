@@ -1,5 +1,6 @@
 using StreamBoss.Web;
 using StreamBoss.Web.Components;
+using StreamBoss.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,9 @@ builder.AddRedisOutputCache("cache");
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<WeatherApiClient>(client=> client.BaseAddress = new("http://apiservice"));
+builder.Services.AddHttpClient<IApiClient, ApiClient>("Api", client => client.BaseAddress = new("http://apiservice"));
 
 var app = builder.Build();
 

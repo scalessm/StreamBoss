@@ -1,6 +1,5 @@
-﻿using StreamBoss.ApiService.Models;
+﻿using StreamBoss.Shared.Models;
 using StreamBoss.Shared.Exceptions;
-using StreamBoss.Shared.Models;
 using System.Collections.Generic;
 using tvMaze = StreamBoss.Shared.Models.TvMaze;
 

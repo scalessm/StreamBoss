@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StreamBoss.ServiceDefaults\StreamBoss.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\StreamBoss.Shared\StreamBoss.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
