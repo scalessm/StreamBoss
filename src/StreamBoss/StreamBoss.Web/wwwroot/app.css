@@ -30,3 +30,20 @@ a.navbar-brand {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.div-search-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+    .div-search-row img {
+        flex: 1;
+        max-width: 25%;
+    }
+
+    .div-search-row p {
+        flex: 3;
+        max-width: 75%;
+    }

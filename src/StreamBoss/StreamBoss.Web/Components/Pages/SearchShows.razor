@@ -1,38 +1,35 @@
 ﻿@page "/searchshows"
 @using StreamBoss.Shared.Models
 @using StreamBoss.Web.Services
+@using StreamBoss.Web.ViewModels
 
+@inject ShowSearchViewModel ViewModel
 
 <h3>SearchShows</h3>
 
 <div>
-    <input type="text" @bind="_searchTerm" />
-    <button class="btn btn-primary" @onclick="Search">Search</button>
+    <input type="text" @bind-value="ViewModel.SearchText" />
+    <button class="btn btn-primary"  @onclick="(() => ViewModel.Search())">Search</button>
 </div>
 
 <div>
-    @if (_shows != null)
+    @if (ViewModel.Shows != null)
     {
-        @foreach(var show in _shows)
+        @foreach(var show in ViewModel.Shows)
         {
             <div>
                 <h4>@show.Title</h4>
-                <p>@show.Summary</p>
-                <img src="@show.ImageUrl" />
+                <div class="container">
+                    <div class="div-search-row">
+                        <img src="@show.ImageUrl" />
+                        @((MarkupString)show.Summary)
+                    </div>
+                </div>
             </div>
         }
     }
 </div>
 
 @code {
-    private string _searchTerm;
-    private Show[] _shows;
-
-    [Inject]
-    public IApiClient ApiClient { get; set; }
-
-    public async Task Search()
-    {
-        _shows = await ApiClient.SearchShows(_searchTerm);
-    }
+    
 }

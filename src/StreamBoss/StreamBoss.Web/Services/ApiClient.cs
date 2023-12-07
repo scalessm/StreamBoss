@@ -16,7 +16,7 @@ namespace StreamBoss.Web.Services
         {
             using (var client = _httpClientFactory.CreateClient("Api"))
             {
-                var response = await client.GetAsync("shows?searchTerm={searchTerm}");
+                var response = await client.GetAsync($"shows?searchTerm={searchText}");
 
                 if (response.IsSuccessStatusCode)
                 {

@@ -1,6 +1,7 @@
 using StreamBoss.Web;
 using StreamBoss.Web.Components;
 using StreamBoss.Web.Services;
+using StreamBoss.Web.ViewModels;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddRazorComponents()
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<WeatherApiClient>(client=> client.BaseAddress = new("http://apiservice"));
 builder.Services.AddHttpClient<IApiClient, ApiClient>("Api", client => client.BaseAddress = new("http://apiservice"));
+builder.Services.AddScoped<IApiClient, ApiClient>();
+builder.Services.AddScoped<ShowSearchViewModel>();
 
 var app = builder.Build();
 
