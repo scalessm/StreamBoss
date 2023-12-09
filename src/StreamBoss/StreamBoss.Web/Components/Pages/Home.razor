@@ -1,7 +1,27 @@
 ﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@using StreamBoss.Web.ViewModels
+@inject HomeViewModel ViewModel
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+@if(ViewModel.IsAuthenticated){
+    <h1>Hello, @ViewModel.User.Identity.Name</h1>
+
+}
+else
+{
+    <h1>Not authenticated</h1>
+}
 
 Welcome to your new app.
+
+@code {
+    // [CascadingParameter]
+    // private Task<AuthenticationState>? authenticationState { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ViewModel.SetAuthenticationState();
+    }
+}

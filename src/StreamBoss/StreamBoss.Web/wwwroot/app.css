@@ -41,9 +41,11 @@ a.navbar-brand {
     .div-search-row img {
         flex: 1;
         max-width: 25%;
+        padding: 4px;
     }
 
     .div-search-row p {
         flex: 3;
         max-width: 75%;
+        padding: 4px;
     }

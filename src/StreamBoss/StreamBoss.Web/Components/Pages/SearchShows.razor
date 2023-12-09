@@ -1,4 +1,7 @@
 ﻿@page "/searchshows"
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
 @using StreamBoss.Shared.Models
 @using StreamBoss.Web.Services
 @using StreamBoss.Web.ViewModels
@@ -26,6 +29,11 @@
                     </div>
                 </div>
             </div>
+
+            @if(Array.FindIndex(ViewModel.Shows, x => x == show) < ViewModel.Shows.Length - 1)
+            {
+                <hr />
+            }
         }
     }
 </div>
